@@ -3,6 +3,7 @@ Maven: Ensure Maven is installed on your system.
 Git: (Optional) To clone the repository.
 
 git clone https://github.com/Spence1515/smartpark.git
+git pull main
 cd smartpark
 
 Using IDE (e.g., IntelliJ IDEA, Eclipse):
