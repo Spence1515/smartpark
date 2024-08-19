@@ -17,7 +17,6 @@ import lombok.Setter;
 
 @Entity
 @Table(name = "vehicles")
-@NoArgsConstructor
 @AllArgsConstructor 
 @Data
 public class RegisterVehicle {
@@ -33,4 +32,15 @@ public class RegisterVehicle {
 		 
 		 @Column(nullable = true)
 		 private String parkingLotId;
+		 
+		 public RegisterVehicle(String licensePlate, String ownersName, String type, String parkingLotId) {
+		        this.licensePlate = licensePlate;
+		        this.ownersName = ownersName;
+		        this.type = type;
+		        this.parkingLotId = parkingLotId;
+		    }
+
+		 public RegisterVehicle() {
+			 
+		 }
 }

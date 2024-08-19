@@ -13,7 +13,6 @@ import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "parking_lots")
-@NoArgsConstructor
 @AllArgsConstructor 
 @Data
 public class RegisterParkingLot {
@@ -29,4 +28,15 @@ public class RegisterParkingLot {
 	 private String location;
 	 @Column(nullable = false)
 	 private Integer occupied;
+	 
+	 public RegisterParkingLot(String lotId, int capacity, String location, int occupied) {
+	        this.lotId = lotId;
+	        this.capacity = capacity;
+	        this.location = location;
+	        this.occupied = occupied;
+	 }
+
+	 public RegisterParkingLot() {
+		 
+	 }
 }
